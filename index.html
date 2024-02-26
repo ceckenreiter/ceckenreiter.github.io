@@ -7,30 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
     <nav>
         <div class="icons"> 
             <a target="_blank" href='https://github.com/ceckenreiter'>Github</a>
             <a target="_blank" href='./resources/CV.pdf'>CV</a>
             <a target="_blank" href='mailto: cckenreiter@gmail.com?subject=Hello I Saw Your Profile'><img src='./resources/pngtree-email-icon-png-image_1757854.jpg'></a>
         </div>
-        
     </nav>
-    <div class="page1">
-        <span>
-            <div class="right">
-                <div class="navigation">
-                    <ul class="pages">
-                        <li><a href=''>About Me</a></li>
-                        <li><a href=''>Project Library</a></li>
-                    </ul>
-                    
-                </div>
-                <button><a>Lets Chat</a></button>
-            </div>
-        </span>
+
+    <section class="introPage">
         <div class='content'>
             <h1>Hello</h1>
              <div>
@@ -42,8 +32,94 @@
                 <h3>full stack engineer</h2>
             </div>
         </div>   
-    </div>      
-</body>
+        <span>
+            <div class="right">
+                    <ul class="pages">
+                        <li><a href='#information'>About Me</a></li>
+                        <li><a href='#projectLibrary'>Project Library</a></li>
+                    </ul>
+                    <button >
+                        <p id="test" onclick="contact()">Lets Chat</p>
+                    </button>
+            </div>
+        </span> 
+    </section>  
 
+    <section id="information">
+        <div class="aboutMe">
+            <div class='fade' onmouseover="fadeIn(0)" onmouseout="fadeOut(0)">
+                <h1>About Me</h1>
+                <p>Coding has always been a topic of interest for me even as my other interests fluctuated and changed. I began to take coding seriously about 6 months ago, and have since expanded my knowledge tenfold.</p>
+            </div>
+            <div class='fade' onmouseover="fadeIn(1)" onmouseout="fadeOut(1)">
+                <h1>Current Projects</h1>
+                <p>Right now I am wor3king on completing a full Stack Engineering Career Course led by CodeCademy as well as expanding my portfolio to show off my learned skills.</p>
+            </div>
+            <div class='fade' onmouseover="fadeIn(2)" onmouseout="fadeOut(2)">
+                <h1>Accepting Projects?</h1>
+                <p>Accepting projects and exanding my portfolio is always a priority of mine. If you need help starting or completing a project please reach out for a free consultation. Feel free to take a look at my <a target="_blank" href='./resources/CV.pdf'>CV</a> and <a href=#projectLibrary>project library</a> to understand what skills I have to offer.</p>
+            </div>
+        </div>
+    
+    <section id="projectLibrary">
+        <h1>Project Library</h1>
+        <div class="projects">
+            <div class="done">
+                <h3>Completed</h3>
+                <a target="_blank" href="file:///Users/christinaeckenreiter/Coding/port-projects/tarot/index.html">
+                    <div class="button">
+                        <h2>Tarot Generator</h2>
+                        <p>My first ever JS project whereby a client chooses between tarot card generator options and receives a tarot card reading in response.</p>
+                        <p>Languages Used: JavaScript, HTML, CSS</p>
+                        </div>
+                </a>
+                <a target="_blank" href="./index.html">
+                    <div class="button">
+                        <h2>Portfolio Page</h2>
+                        <p>A page to host my contact information and display my projects</p>
+                        <p>Languages Used: HTML, CSS</p>
+                    </div>
+                </a>
+            </div>
+            <div class='ongoing'>
+                <h3>Ongoing</h3>
+                <a target="_blank" href="file:///Users/christinaeckenreiter/Coding/port-projects/spotifyplaylist/public/index.html">
+                    <div class="button">
+                        <h2>Spotify Playlist Creator</h2>
+                        <p>My first React App</p>
+                        <p>Languages: JavaScript, HTML, CSS, React</p>
+                    </div>
+                </a>
+                <a target="_blank" href="file:///Users/christinaeckenreiter/Coding/port-projects/checkInForm/index.html">
+                    <div class="button">
+                        <h2>Customer Survey</h2>
+                        <p>A quick static page that takes in customer input to collect.</p>
+                        <p>Languages Used: HTML, CSS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <a href="./index.html">^ Back to Top ^</a>
+    </section>
+    <script>
+        function contact() {
+            let contact=document.getElementById('test')
+            contact.innerHTML = 'Call: +1 5085423297' 
+        }
+
+        function fadeIn(i) {
+            let x = document.getElementsByClassName('fade')
+            x[i].style.opacity = '100%'; 
+        };
+
+        function fadeOut(i) {
+            let y = document.getElementsByClassName('fade')
+            y[i].style.opacity = '20%'; 
+        };
+    </script>
+   
+</body>
 
 </html>
