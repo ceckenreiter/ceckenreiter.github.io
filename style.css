@@ -294,234 +294,336 @@ section.footer a{
 
 /*Responsive Designing*/
 
-@media only screen and (max-width: 749px) {
-body nav{ 
-    margin-left: 3rem; 
-}
+@media only screen and (max-width: 500px) {
 
-section.introPage span{
-    visibility: hidden;
-    height: 0rem; 
-    width: 0rem;
-}
-
-section.introPage{
-    margin: 1rem; 
-    width: 95%; 
-    display: flex;
-}
-
-section.introPage div.content{
-    width: 100%; 
-    height: 100%;
-    margin-left: 1rem; 
-}
-section.introPage div.content h1{ 
-    margin: 2rem; 
-    font-size: 10rem; 
-}
-
-section.introPage div.content h2 {
-    font-size: 1.5rem; 
-}
-
-section.introPage div.content h3{
-    font-size: 1.5rem; 
-    width: 65%; 
-}
-
-#information div.aboutMe {
-    height: auto; 
-}
-
-
-#information div.aboutMe div{
-    margin: 3rem;
-    width: 90%; 
-    margin-bottom: 5rem;
-}
-#information div.aboutMe div h1{
-    font-size: 3rem;
-    margin-left: .5rem; 
-    letter-spacing: 2px;
-}
-
-#information div.aboutMe div p{
-    font-size: 1.5rem; 
-}
-
-
-#projectLibrary div.projects {
-    display: inline-block;
-    width: 95%; 
     
-}
-
-#projectLibrary div.projects div{
-    width: 100%; 
-}
-
-#projectLibrary h1{
-    font-size: 4rem; 
-}
-
-#projectLibrary  h3{
-    font-size: 2rem;
-}
-
-#projectLibrary div.projects div.button{
-    font-size: 1.5rem;
-    width: 80%; 
-}
-
-#projectLibrary div.projects div.button:hover{
-    font-size: 1.5rem;
-}
-}
-
-@media only screen and (min-width: 750px) and (max-width: 999px) {
-
-    section.introPage {
-        justify-content: space-between;
-        height: 40rem;
-
-    }
-
-    section.introPage span{
-        width: 25%; 
-        margin: 1rem;
-        }
-
-    section.introPage div.right{
-        margin-top: 10rem;
-        height: 50%; 
-
-    }
-
-    section.introPage ul.pages {
-        height: 65%; 
-        padding: 0rem; 
-        width: 90%; 
+    body { 
     }
     
+    body nav div.icons{
+        justify-content: space-evenly; 
         
-    section.introPage ul.pages li a{
-        margin: 0rem;
-        padding: 0rem; 
     }
-
-
-    section.introPage div.right button{
+    
+    body nav div.icons a{
+        margin: 0rem;     
+    }
+        
+    
+    section.introPage span{
         visibility: hidden;
-        height: 0%; 
-        width: 0%
+        height: 0rem; 
+        width: 0rem;
     }
-
+    
+    section.introPage{
+        width: 100%; 
+    }
+    
     section.introPage div.content{
         width: 100%; 
-        height: 90%;
-        margin-left: 1rem; 
+        height: 100%;
+        margin: 0rem; 
+        margin-bottom: 5rem; 
     }
-
+    section.introPage div.content h1{ 
+        margin: 1rem; 
+        font-size: 8rem; 
+    }
+    
     section.introPage div.content h2 {
         font-size: 1.5rem; 
     }
     
     section.introPage div.content h3{
         font-size: 1.5rem; 
-        width: 15rem;
+        width: 65%; 
     }
-
-
+    
     #information div.aboutMe {
-        height: 75rem; 
+        height: 2800px; 
+        border: 2px solid white; 
     }
-
-    #information div.aboutMe div h1 {
+    
+    
+    #information div.aboutMe div{
+        width: 100%; 
+        height: auto;
+        margin-left: 1rem; 
+        margin-bottom: 1rem;
+        border: 2px solid pink
+    }
+    #information div.aboutMe div h1{
         font-size: 3rem;
-        letter-spacing: 0.5rem;
-        margin: 0rem; 
-       }
-
-    #information div.aboutMe div p {
-        width: 45%; 
-        text-align: left;
-        font-size: 1.5rem;
+        margin-left: .5rem; 
+        letter-spacing: 2px;
     }
-
-    #projectLibrary h1{
-        font-size: 3rem; 
-        margin: 0rem; 
-    }
-
-    #projectLibrary h2{
-        font-size: 2rem; 
-    }
-    #projectLibrary h3{
-        font-size: 2rem; 
-    }
-
-    #projectLibrary div.projects div.button {
-        width: 60%;
-        font-size: 1rem;
-    }
-
-    #projectLibrary div.projects div.button:hover{
-        font-size: 1rem; 
-    }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1169px) {
-
-    section.introPage div.content h1 {
-        margin-bottom: 5rem;
-    }
-
-    section.introPage div.content h3, section.introPage div.content h2{
+    
+    #information div.aboutMe div p{
         font-size: 1.5rem; 
-        margin-bottom: 2rem;
     }
-
-    #information div.aboutMe {
-        height: 75rem; 
+    
+    
+    #projectLibrary div.projects {
+        display: inline-block;
+        width: 100%; 
     }
-
-    #information div.aboutMe div h1 {
-        font-size: 4rem;
-        letter-spacing: 1rem;
+    
+    #projectLibrary div.projects div{
+        width: 100%;
         margin: 0rem; 
-       }
-
-    #information div.aboutMe div p {
-        width: 45%; 
-        text-align: left;
-        font-size: 1.5rem;
     }
-   
+    
+    
+    
     #projectLibrary h1{
         font-size: 4rem; 
     }
-
-    #projectLibrary h2, #projectLibrary h3{
-        font-size: 2rem; 
-    }
-   
-    #projectLibrary div.projects div.button {
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 1170px) and (max-width: 1349px) {
-    #information div.aboutMe div h1 {
-        width: 45%; 
-        margin-left: 1.5rem; 
-    }
-
-    #information div.aboutMe div p {
-        width: 45%; 
-        text-align: left;
     
+    #projectLibrary  h3{
+        font-size: 2rem;
+    }
+    
+    #projectLibrary div.projects div.button{
+        font-size: 1.5rem;
+        margin: 1rem; 
+        width: 75%; 
+    }
+    
+    #projectLibrary div.projects div.button:hover{
+        font-size: 1.5rem;
+    }
+    }
+    
+@media only screen and (max-width: 749px) and (min-width: 501px) {
+    body nav{ 
+        margin-left: 3rem; 
+    }
+    
+    section.introPage span{
+        visibility: hidden;
+        height: 0rem; 
+        width: 0rem;
+    }
+    
+    section.introPage{
+        margin: 1rem; 
+        width: 95%; 
+        display: flex;
+    }
+    
+    section.introPage div.content{
+        width: 100%; 
+        height: 100%;
+        margin-left: 1rem; 
+    }
+    section.introPage div.content h1{ 
+        margin: 2rem; 
+        font-size: 10rem; 
+    }
+    
+    section.introPage div.content h2 {
+        font-size: 1.5rem; 
+    }
+    
+    section.introPage div.content h3{
+        font-size: 1.5rem; 
+        width: 65%; 
+    }
+    
+    #information div.aboutMe {
+        height: auto; 
+    }
+    
+    
+    #information div.aboutMe div{
+        margin: 3rem;
+        width: 90%; 
+        margin-bottom: 5rem;
+    }
+    #information div.aboutMe div h1{
+        font-size: 3rem;
+        margin-left: .5rem; 
+        letter-spacing: 2px;
+    }
+    
+    #information div.aboutMe div p{
+        font-size: 1.5rem; 
+    }
+    
+    
+    #projectLibrary div.projects {
+        display: inline-block;
+        width: 95%; 
+        
+    }
+    
+    #projectLibrary div.projects div{
+        width: 100%; 
+    }
+    
+    #projectLibrary h1{
+        font-size: 4rem; 
+    }
+    
+    #projectLibrary  h3{
+        font-size: 2rem;
+    }
+    
+    #projectLibrary div.projects div.button{
+        font-size: 1.5rem;
+        width: 80%; 
+    }
+    
+    #projectLibrary div.projects div.button:hover{
+        font-size: 1.5rem;
     }
 }
-
+    
+@media only screen and (min-width: 750px) and (max-width: 999px) {
+    
+        section.introPage {
+            justify-content: space-between;
+            height: 40rem;
+    
+        }
+    
+        section.introPage span{
+            width: 25%; 
+            margin: 1rem;
+            }
+    
+        section.introPage div.right{
+            margin-top: 10rem;
+            height: 50%; 
+    
+        }
+    
+        section.introPage ul.pages {
+            height: 65%; 
+            padding: 0rem; 
+            width: 90%; 
+        }
+        
+            
+        section.introPage ul.pages li a{
+            margin: 0rem;
+            padding: 0rem; 
+        }
+    
+    
+        section.introPage div.right button{
+            visibility: hidden;
+            height: 0%; 
+            width: 0%
+        }
+    
+        section.introPage div.content{
+            width: 100%; 
+            height: 90%;
+            margin-left: 1rem; 
+        }
+    
+        section.introPage div.content h2 {
+            font-size: 1.5rem; 
+        }
+        
+        section.introPage div.content h3{
+            font-size: 1.5rem; 
+            width: 15rem;
+        }
+    
+    
+        #information div.aboutMe {
+            height: 75rem; 
+        }
+    
+        #information div.aboutMe div h1 {
+            font-size: 3rem;
+            letter-spacing: 0.5rem;
+            margin: 0rem; 
+           }
+    
+        #information div.aboutMe div p {
+            width: 45%; 
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    
+        #projectLibrary h1{
+            font-size: 3rem; 
+            margin: 0rem; 
+        }
+    
+        #projectLibrary h2{
+            font-size: 2rem; 
+        }
+        #projectLibrary h3{
+            font-size: 2rem; 
+        }
+    
+        #projectLibrary div.projects div.button {
+            width: 60%;
+            font-size: 1rem;
+        }
+    
+        #projectLibrary div.projects div.button:hover{
+            font-size: 1rem; 
+        }
+}
+    
+@media only screen and (min-width: 1000px) and (max-width: 1169px) {
+    
+        section.introPage div.content h1 {
+            margin-bottom: 5rem;
+        }
+    
+        section.introPage div.content h3, section.introPage div.content h2{
+            font-size: 1.5rem; 
+            margin-bottom: 2rem;
+        }
+    
+        #information div.aboutMe {
+            height: 75rem; 
+        }
+    
+        #information div.aboutMe div h1 {
+            font-size: 4rem;
+            letter-spacing: 1rem;
+            margin: 0rem; 
+           }
+    
+        #information div.aboutMe div p {
+            width: 45%; 
+            text-align: left;
+            font-size: 1.5rem;
+        }
+       
+        #projectLibrary h1{
+            font-size: 4rem; 
+        }
+    
+        #projectLibrary h2, #projectLibrary h3{
+            font-size: 2rem; 
+        }
+       
+        #projectLibrary div.projects div.button {
+            width: 70%;
+        }
+}
+    
+@media only screen and (min-width: 1170px) and (max-width: 1349px) {
+        #information div.aboutMe div h1 {
+            width: 45%; 
+            margin-left: 1.5rem; 
+        }
+    
+        #information div.aboutMe div p {
+            width: 45%; 
+            text-align: left;
+        
+        }
+}
+    
 @media only screen and (min-width: 1350px) {}
+    
