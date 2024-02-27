@@ -342,7 +342,6 @@ section.footer a{
     
     #information div.aboutMe {
         height: 2800px; 
-        border: 2px solid white; 
     }
     
     
@@ -351,7 +350,6 @@ section.footer a{
         height: auto;
         margin-left: 1rem; 
         margin-bottom: 1rem;
-        border: 2px solid pink
     }
     #information div.aboutMe div h1{
         font-size: 3rem;
